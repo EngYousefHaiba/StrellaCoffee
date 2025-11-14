@@ -1,0 +1,380 @@
+@font-face {
+  font-family: 'StrellaFont';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../webfonts/ProximaSoft-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'StrellaFont2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../webfonts/BlabanFonts2.woff2) format('woff2');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'StrellaFont';
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    perspective: 500px;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+}
+/* a:hover{
+    color: #003a6c;
+} */
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+button{
+    border: none;
+}
+.DBrownBg{
+    background-color: #784f37;
+}
+.DBrownFont{
+    color: #784f37;
+}
+.LBrownBg{
+    background-color: #c3a492;
+}
+.LBrownFont{
+    color: #c3a492;
+}
+.DGreenBg{
+    background-color: #015613;
+}
+.DGreenFont{
+    color: #015613;
+}
+.LGreenBg{
+    background-color: #468653;
+}
+.LGreenFont{
+    color: #468653;
+}
+.Container1{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.Container2{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.headercontainer{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.SmallHeader{
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 2px solid #c3a492;
+}
+.ReturnPolicy{
+    height: auto;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Social{
+    height: auto;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.BigHeader{
+    width: 100%;
+    height: 10vh;
+    /* background-color: bisque; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 2px solid #784f37;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.BLabanLogo{
+    width: 25%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.BLabanLogo img{
+    height: 7vh;
+}
+.BLabanLogo span{
+    font-size: 30px;
+    font-family: 'StrellaFont2';
+    /* margin: auto; */
+    /* line-height: 7vh; */
+    margin-left: 5%;
+    font-weight: 300;
+
+}
+.PageIndex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    font-size: 30px;
+    line-height: 7vh;
+}
+.Account{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* line-height: 7vh; */
+    font-size: 25px;
+    width: 25%;
+    line-height: 7vh;
+}
+.AccountButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.SaleHeader{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 5vh;
+}
+.SaleHeader span{
+    line-height: 5vh;
+    /* color: black; */
+    font-weight: 600;
+    font-size: 20px;
+}
+.ShowMeLink{
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+.ShowMeLink:hover{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(93, 93, 93);
+    cursor: pointer;
+}
+.HomePage{
+    height: 95vh;
+    background-color: #bfdcf6;
+    background-color: #c3a492;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.HomeDetails{
+    margin: auto;
+    /* color: #c3a492; */
+    width: 30%;
+
+}
+.HomeDetailsBold{
+    color: #015613;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'StrellaFont2';
+    margin-bottom: 10px;
+}
+.HomeDetailsSimple{
+    color: #015613;
+    font-size: 30px;
+}
+.HomePic{
+    border-radius: 50px 10px;
+    border: 2px solid #784f37;
+    background-image: url(../images/Coffee\ HomeSection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -100px;
+    margin: auto;
+    width: 60%;
+    height: 80vh;
+    box-shadow: 5px 5px #784f37;
+}
+.HomePageButton{
+    width: 50%;
+    /* height: 8vh; */
+    color: #c3a492;
+    background-color: #784f37;
+    border: 3px solid #784f37;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'StrellaFont2';
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition-duration: 0.5s;
+}
+.HomePageButton:hover{
+    background-color:#c3a492;
+    color: #784f37;
+    cursor: pointer;
+}
+.SecSection{
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #c3a492;
+}
+.SweetCategories{
+    width: 25%;
+    height: 75%;
+    background-color: #c3a492;
+    /* margin: auto; */
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid #784f37;
+    position: relative;
+}
+.SweetCategories img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition-duration: 0.5s;
+    position: relative;
+    /* width: max-content; */
+    filter: brightness(0.9) ;
+}
+.SweetCategories:hover img{
+    transform: scale(1.2) translateY(-20px);
+    filter: brightness(0.7) ;
+}
+.SweetCategories:hover .SweetDetails{
+    transform: translateY(-20%);
+    bottom: 0%;
+}
+.SweetDetails{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    bottom: -30%;
+    transition-duration: 0.5s;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+.SweetDetailsBold{
+    font-family: 'StrellaFont2';
+    font-size: 40px;
+}
+.SweetDetailsSmall{
+    font-family: 'StrellaFont';
+    font-size: 20px;
+    transition-duration: 0.5s;
+    margin-top: 5%;
+}
+.SweetDetailsSmall:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+.ThirdSection{
+    height: 100vh;
+    background-color: #c3a492;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BestSellingText{
+    height: 10vh;
+}
+.BestSellingText p{
+    font-size: 40px;
+    font-family: 'StrellaFont2';
+    color: #784f37;
+}
+.SellingOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-size: 30px;
+}
+.SellingOptions p{
+    font-size: 25px;
+    font-family: 'StrellaFont2';
+    color: #784f37;
+}
+.SellingLine{
+    height: 3px;
+    width: 85%;
+    background-color: #784f37;
+}
+.HoverSection{
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+.HoverSection:hover .Dessert{
+    transform: rotateY(180deg);
+}
+.Dessert{
+    height: 70vh;
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    position: relative;
+    transform: rotateY(0deg);
+    transition: 0.5s ease-in-out;
+}
+.FlipFace{
+    position: absolute;
+    background-color: black;
+    border-radius: 12px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 10px;
+}
+.FlipBack{
+    position: absolute;
+    background-color: blue;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    padding: 10px;
+}
