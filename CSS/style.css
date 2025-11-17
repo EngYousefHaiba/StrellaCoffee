@@ -42,21 +42,25 @@ button{
 }
 .DBrownBg{
     background-color: #784f37;
+    background-color: #5d3527;
 }
 .DBrownFont{
     color: #784f37;
+    color: #5d3527;
 }
 .LBrownBg{
     background-color: #c3a492;
+    background-color: #754027;
 }
 .LBrownFont{
     color: #c3a492;
+    color: #754027;
 }
 .DGreenBg{
-    background-color: #015613;
+    background-color: #005512;
 }
 .DGreenFont{
-    color: #015613;
+    color: #005512;
 }
 .LGreenBg{
     background-color: #468653;
@@ -123,31 +127,31 @@ button{
     top: 0;
     z-index: 1000;
 }
-.BLabanLogo{
-    width: 25%;
+.StrellaLogo{
+    width: 20%;
     /* background-color: black; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     
 }
-.BLabanLogo img{
+.StrellaLogo img{
     height: 7vh;
 }
-.BLabanLogo span{
+.StrellaLogo span{
     font-size: 30px;
     font-family: 'StrellaFont2';
-    /* margin: auto; */
-    /* line-height: 7vh; */
-    margin-left: 5%;
-    font-weight: 300;
 
+    font-weight: 300;
+}
+.StrellaName{
+    margin-left: 5%;
 }
 .PageIndex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 60%;
     font-size: 30px;
     line-height: 7vh;
 }
@@ -157,7 +161,7 @@ button{
     align-items: center;
     /* line-height: 7vh; */
     font-size: 25px;
-    width: 25%;
+    width: 20%;
     line-height: 7vh;
 }
 .AccountButtons{
