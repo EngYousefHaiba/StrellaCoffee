@@ -41,19 +41,19 @@ button{
     border: none;
 }
 .DBrownBg{
-    background-color: #784f37;
+    /* background-color: #784f37; */
     background-color: #5d3527;
 }
 .DBrownFont{
-    color: #784f37;
+    /* color: #784f37; */
     color: #5d3527;
 }
 .LBrownBg{
     background-color: #c3a492;
-    background-color: #754027;
+    /* background-color: #754027; */
 }
 .LBrownFont{
-    color: #c3a492;
+    /* color: #c3a492; */
     color: #754027;
 }
 .DGreenBg{
@@ -128,7 +128,7 @@ button{
     z-index: 1000;
 }
 .StrellaLogo{
-    width: 20%;
+    width: 22%;
     /* background-color: black; */
     display: flex;
     justify-content: flex-start;
@@ -145,13 +145,13 @@ button{
     font-weight: 300;
 }
 .StrellaName{
-    margin-left: 5%;
+    margin-left: 2%;
 }
 .PageIndex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 54%;
     font-size: 30px;
     line-height: 7vh;
 }
@@ -161,7 +161,7 @@ button{
     align-items: center;
     /* line-height: 7vh; */
     font-size: 25px;
-    width: 20%;
+    width: 22%;
     line-height: 7vh;
 }
 .AccountButtons{
@@ -196,8 +196,8 @@ button{
 }
 .HomePage{
     height: 95vh;
-    background-color: #bfdcf6;
-    background-color: #c3a492;
+    /* background-color: #bfdcf6;
+    background-color: #c3a492; */
     display: flex;
     justify-content: space-between;
     align-items: center;
