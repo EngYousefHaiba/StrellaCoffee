@@ -12,6 +12,14 @@
   font-display: swap;
   src: url(../webfonts/BlabanFonts2.woff2) format('woff2');
 }
+:root {
+    --DarkBrown: #644737;
+    --LightBrown: #b9a78a;
+    --MedBrown: #958365;
+    --DarkGreen: #025d15;
+    --MedGreen: #809c0c;
+    --LightGreen: #9fa980;
+}
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +38,9 @@ a{
     display: inline-block;
     color: #ffffff;
 }
+p{
+    cursor: default;
+}
 /* a:hover{
     color: #003a6c;
 } */
@@ -39,34 +50,6 @@ li{
 }
 button{
     border: none;
-}
-.DBrownBg{
-    /* background-color: #784f37; */
-    background-color: #5d3527;
-}
-.DBrownFont{
-    /* color: #784f37; */
-    color: #5d3527;
-}
-.LBrownBg{
-    background-color: #c3a492;
-    /* background-color: #754027; */
-}
-.LBrownFont{
-    /* color: #c3a492; */
-    color: #754027;
-}
-.DGreenBg{
-    background-color: #005512;
-}
-.DGreenFont{
-    color: #005512;
-}
-.LGreenBg{
-    background-color: #468653;
-}
-.LGreenFont{
-    color: #468653;
 }
 .Container1{
     width: 85%;
@@ -91,13 +74,14 @@ button{
     justify-content: space-between;
     align-items: center;
 }
-.SmallHeader{
+.SmallHeader1{
     width: 100%;
     height: 5vh;
     justify-content: center;
     align-items: center;
     display: flex;
-    border-bottom: 2px solid #c3a492;
+    border-bottom: 2px solid #b9a78a;
+    background-color: var(--DarkGreen);
 }
 .ReturnPolicy{
     height: auto;
@@ -118,18 +102,16 @@ button{
 .BigHeader{
     width: 100%;
     height: 10vh;
-    /* background-color: bisque; */
+    background-color: var(--LightGreen);
     justify-content: center;
     align-items: center;
     display: flex;
-    border-bottom: 2px solid #784f37;
-    position: sticky;
+    border-bottom: 2px solid var(--DarkBrown);
     top: 0;
     z-index: 1000;
 }
 .StrellaLogo{
     width: 22%;
-    /* background-color: black; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -170,6 +152,15 @@ button{
     align-items: center;
     width: 50%;
 }
+.SmallHeader2{
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: 2px solid #b9a78a;
+    background-color: var(--DarkBrown);
+}
 .SaleHeader{
     text-transform: capitalize;
     display: flex;
@@ -178,26 +169,28 @@ button{
     width: 50%;
     height: 5vh;
 }
-.SaleHeader span{
+.SaleTitle{
     line-height: 5vh;
-    /* color: black; */
     font-weight: 600;
     font-size: 20px;
+    color: var(--LightBrown);
 }
 .ShowMeLink{
     text-decoration: underline;
     transition-duration: 0.5s;
+    line-height: 5vh;
+    font-weight: 600;
+    font-size: 20px;
 }
 .ShowMeLink:hover{
     font-size: 22px;
     font-weight: 700;
-    color: rgb(93, 93, 93);
+    color: var(--DarkGreen);
     cursor: pointer;
 }
 .HomePage{
     height: 95vh;
-    /* background-color: #bfdcf6;
-    background-color: #c3a492; */
+    background-color: var(--LightBrown);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -205,24 +198,24 @@ button{
 }
 .HomeDetails{
     margin: auto;
-    /* color: #c3a492; */
+    /* color: #b9a78a; */
     width: 30%;
 
 }
 .HomeDetailsBold{
-    color: #015613;
+    color: #025d15;
     font-size: 35px;
     font-weight: 600;
     font-family: 'StrellaFont2';
     margin-bottom: 10px;
 }
 .HomeDetailsSimple{
-    color: #015613;
+    color: #025d15;
     font-size: 30px;
 }
 .HomePic{
     border-radius: 50px 10px;
-    border: 2px solid #784f37;
+    border: 2px solid var(--DarkBrown);
     background-image: url(../images/Coffee\ HomeSection.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,14 +223,11 @@ button{
     margin: auto;
     width: 60%;
     height: 80vh;
-    box-shadow: 5px 5px #784f37;
+    box-shadow: 5px 5px var(--DarkBrown);
 }
 .HomePageButton{
     width: 50%;
-    /* height: 8vh; */
-    color: #c3a492;
-    background-color: #784f37;
-    border: 3px solid #784f37;
+    border: 3px solid var(--DarkBrown);
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -248,10 +238,12 @@ button{
     border-radius: 10px;
     text-transform: capitalize;
     transition-duration: 0.5s;
+    background-color:var(--DarkBrown);
+    color: var(--LightBrown);
 }
 .HomePageButton:hover{
-    background-color:#c3a492;
-    color: #784f37;
+    background-color:var(--LightBrown);
+    color: var(--DarkBrown);
     cursor: pointer;
 }
 .SecSection{
@@ -259,26 +251,35 @@ button{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    background-color: #c3a492;
+    border-top: 3px solid var(--DarkBrown);
+    border-bottom: 3px solid var(--DarkBrown);
+    background-color: var(--MedBrown);
 }
 .SweetCategories{
     width: 25%;
     height: 75%;
-    background-color: #c3a492;
+    background-color: #b9a78a;
     /* margin: auto; */
     overflow: hidden;
     border-radius: 10px;
-    border: 3px solid #784f37;
+    border: 3px solid var(--DarkBrown);
     position: relative;
 }
 .SweetCategories img{
     width: 100%;
-    height: 100%;
     display: block;
     transition-duration: 0.5s;
     position: relative;
-    /* width: max-content; */
+    width: 100%;
+    height: 100%;
     filter: brightness(0.9) ;
+}
+.SweetImages{
+    width: 100%;
+    display: block;
+    transition-duration: 0.5s;
+    position: relative;
+    filter: brightness(0.9);
 }
 .SweetCategories:hover img{
     transform: scale(1.2) translateY(-20px);
@@ -295,17 +296,18 @@ button{
     height: 50%;
     bottom: -30%;
     transition-duration: 0.5s;
-    /* background-color: rgba(0, 0, 0, 0.3); */
 }
 .SweetDetailsBold{
     font-family: 'StrellaFont2';
     font-size: 40px;
+    color: #ffffff;
 }
 .SweetDetailsSmall{
     font-family: 'StrellaFont';
     font-size: 20px;
     transition-duration: 0.5s;
     margin-top: 5%;
+    color: #ffffff;
 }
 .SweetDetailsSmall:hover{
     cursor: pointer;
@@ -314,11 +316,12 @@ button{
 }
 .ThirdSection{
     height: 100vh;
-    background-color: #c3a492;
+    background-color: var(--LightBrown);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 3%;
 }
 .BestSellingText{
     height: 10vh;
@@ -326,30 +329,55 @@ button{
 .BestSellingText p{
     font-size: 40px;
     font-family: 'StrellaFont2';
-    color: #784f37;
+    color: var(--DarkBrown);
 }
 .SellingOptions{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 35%;
+    height: 100%;
     font-size: 30px;
 }
 .SellingOptions p{
     font-size: 25px;
     font-family: 'StrellaFont2';
-    color: #784f37;
+    color: var(--DarkBrown);
+    transition: 0.5s;
+}
+.Selected{
+    background-color: var(--DarkBrown);
+    border-radius: 10px;
+}
+.Selected p{
+    color: var(--LightBrown);
+}
+.Option{
+    padding: 10px;
+}
+.Option:hover{
+    background-color: var(--DarkBrown);
+    border-radius: 10px;
+}
+.Option:hover p{
+    color: var(--LightBrown);
 }
 .SellingLine{
     height: 3px;
+    border-top: 3px solid var(--DarkBrown);
+    border-radius: 10px;
     width: 85%;
-    background-color: #784f37;
+    border: none;
+    background-color: var(--DarkBrown);
 }
 .HoverSection{
     width: 20%;
-    height: 100%;
+    height: 70vh;
     position: relative;
+    margin-top: 3%;
+    border-radius: 10px;
+
 }
 .HoverSection:hover .Dessert{
     transform: rotateY(180deg);
@@ -363,22 +391,229 @@ button{
     transform: rotateY(0deg);
     transition: 0.5s ease-in-out;
 }
-.FlipFace{
+.FlipFace1{
     position: absolute;
-    background-color: black;
-    border-radius: 12px;
+    background-color: var(--LightBrown);
+    border: 3px solid var(--DarkBrown) ;
+    border-radius: 10px;
     z-index: 1;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    padding: 10px;
+
 }
-.FlipBack{
+.FlipBack1{
     position: absolute;
-    background-color: blue;
-    border-radius: 12px;
+    background-color: var(--LightBrown);
+    border: 3px solid var(--DarkBrown) ;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     transform: rotateY(180deg);
     padding: 10px;
+}
+.Juice1{
+    background-image: url(../images/Juices\ \(1\).jpeg);
+    background-position: bottom;
+    background-size: cover;
+}
+.Juice2{
+    background-image: url(../images/Juices\ \(2\).jpeg);
+    background-position: bottom;
+    background-size: cover;
+}
+.Juice3{
+    background-image: url(../images/Juices\ \(3\).jpeg);
+    background-position: bottom;
+    background-size: cover;
+}
+.Juice4{
+    background-image: url(../images/Juices\ \(4\).jpeg);
+    background-position: bottom;
+    background-size: cover;
+}
+.FourthSection{
+    height: 50vh;
+    border-top: 3px solid var(--DarkBrown);
+    border-bottom: 3px solid var(--DarkBrown);
+    background-color: var(--MedBrown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ReveiwArrows{
+    font-size:40px;
+    color: var(--DarkGreen);
+    cursor: pointer;
+}
+.ReveiwSection{
+    width: 85%;
+
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ReveiwTitle p{
+    font-size: 40px;
+    color: var(--DarkBrown);
+    font-family: 'StrellaFont2';
+}
+.ReveiwText{
+    width: 85%;
+}
+.ReveiwText p{
+    font-size: 30px;
+    color: var(--DarkBrown);
+}
+.ReveiwContact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 40%;
+    margin-top: 5vh;
+}
+.ContactPic{
+    background-image: url(../images/ReveiwerImg.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid var(--DarkBrown);
+}
+.ContactName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 10vh;
+}
+.ContactId{
+    font-size: 30px;
+    font-family: 'StrellaFont2';
+    color: var(--DarkGreen);
+}
+.ContactSpec{
+    font-size: 25px;
+    color: var(--DarkGreen);
+}
+.FifthSection{
+    height: 100vh;
+    background-color: var(--LightBrown);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ComboTitle{
+    color: var(--DarkBrown);
+    font-size: 40px;
+    font-family: 'StrellaFont2';
+    margin-bottom: 5vh;
+}
+.FlipFace2{
+    position: absolute;
+    background-color: var(--LightBrown);
+    border: 3px solid var(--DarkBrown) ;
+    border-radius: 10px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+.FlipBack2{
+    position: absolute;
+    background-color: var(--LightBrown);
+    border: 3px solid var(--DarkBrown) ;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transform: rotatex(180deg);
+    padding: 10px;
+}
+.HoverSection2{
+    width: 20%;
+    height: 50vh;
+    position: relative;
+    margin-top: 3%;
+    border-radius: 12px;
+}
+.HoverSection2:hover .Combo{
+    transform: rotatex(180deg);
+}
+.Combo{
+    height: 50vh;
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    position: absolute;
+    transform: rotateY(0deg);
+    transition: 0.5s ease-in-out;
+}
+.Combo1{
+    background-image: url(../images/Combo1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.Combo2{
+    background-image: url(../images/Combo2.jpeg);
+    background-position: center;
+    background-size: cover;
+}.Combo3{
+    background-image: url(../images/Combo3.jpeg);
+    background-position: center;
+    background-size: cover;
+}.Combo4{
+    background-image: url(../images/Combo4.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.SixthSection{
+    height: 100vh;
+    background-color: var(--MedBrown);
+    border-top: 3px solid var(--DarkBrown);
+    border-bottom: 3px solid var(--DarkBrown);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.HotDealsTitle{
+    color: var(--DarkBrown);
+    font-size: 40px;
+    font-family: 'StrellaFont2';
+}
+.Deal{
+    width: 30%;
+    height: 60vh;
+    background-color: var(--LightBrown);
+    border: 3px solid var(--DarkBrown) ;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.DealPic{
+    width: 80%;
+    border: 3px solid var(--DarkBrown);
+    border-radius: 10px;
+    transform: scale(1);
+    transition:all 0.2s ease-in-out;
+}
+.DealPic:hover{
+    transform: scale(1.1);
+
+}
+.DealDetails p{
+    font-size: 30px;
+    font-family: 'StrellaFont2';
+    text-align: center;
+    color: var(--DarkGreen);
 }
